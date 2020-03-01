@@ -46,6 +46,7 @@ public class Enemy : MonoBehaviour
 
         if (bullet)
         {
+            Debug.Log("It was the bullet");
             // play die sound
             //PlaySound(dieSound);
             // destroy bulllet

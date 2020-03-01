@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// move left when things start
+// move down when things start
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyBehaviour : MonoBehaviour
