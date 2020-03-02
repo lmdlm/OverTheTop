@@ -60,12 +60,12 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
-        private void PublishEnemyKilledEvent()
+    private void PublishEnemyKilledEvent()
+    {
+        // make sure somebody is listening
+        if (EnemyKilledEvent != null)
         {
-            // make sure somebody is listening
-            if (EnemyKilledEvent != null)
-            {
-                EnemyKilledEvent(this);
-            }
+            EnemyKilledEvent(this);
         }
+    }
 }

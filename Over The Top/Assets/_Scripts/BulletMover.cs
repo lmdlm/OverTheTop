@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponsController : MonoBehaviour
+public class BulletMover : MonoBehaviour
 {
     // == private fields ==
     [SerializeField] private float bulletSpeed = 6.0f;
