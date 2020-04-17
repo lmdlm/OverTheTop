@@ -9,7 +9,7 @@ public class WeaponController : MonoBehaviour
     // == private fields ==
     [SerializeField] private float bulletSpeed = 6.0f;
     [SerializeField] private Bullet bulletPrefab;
-    [SerializeField] private float firingRate = 0.25f;
+    [SerializeField] private float firingRate = 0.50f;
     [SerializeField] private AudioClip shootClip;
     [SerializeField] [Range(0f, 1.0f)] private float shootVolume = 0.5f;
 
@@ -63,16 +63,4 @@ public class WeaponController : MonoBehaviour
             yield return new WaitForSeconds(firingRate); // pick a number!!!
         }
     }
-
-    //private void FireBullet()
-    //{
-    //    // instantiate bullet
-    //    Bullet bullet = Instantiate(bulletPrefab, bulletParent.transform);
-    //    // give it the same position as the player
-    //    bullet.transform.position = transform.position;
-    //    // give it velocity and move right
-    //    Rigidbody2D rbb = bullet.GetComponent<Rigidbody2D>();
-    //    //rbb.velocity = new Vector2(1 * speed, 0);
-    //    rbb.velocity = Vector2.right * bulletSpeed;
-    //}
 }

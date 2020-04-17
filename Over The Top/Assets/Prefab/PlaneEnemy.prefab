@@ -85,10 +85,11 @@ PolygonCollider2D:
       - {x: 0, y: 1}
       - {x: -0.29157895, y: -0.07009216}
       - {x: -0.60940725, y: -0.30001032}
-      - {x: -0.5283674, y: -0.5564935}
-      - {x: -0.4020889, y: -0.53938234}
+      - {x: -0.5283674, y: -0.40800643}
+      - {x: -0.20905557, y: -0.40574405}
       - {x: -0.103980064, y: -0.6159108}
-      - {x: 0.51351416, y: -0.586202}
+      - {x: 0.22134437, y: -0.46583605}
+      - {x: 0.49866498, y: -0.45256358}
       - {x: 0.5945533, y: -0.31486458}
 --- !u!212 &5319708622480359163
 SpriteRenderer:
@@ -152,7 +153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d328e0a9c011d14e8357623e3fe38e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
+  enemyBullet: {fileID: 4643900914194897223, guid: bf9c9d65a156a3c47a0a0fb14f9d85ca,
+    type: 3}
+  timeBtwShots: 0
+  startTimeBtwShots: 4
 --- !u!114 &8518870299858383046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,4 +170,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d838162bce1ed34287a45eeb3c24ed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionParticles: {fileID: 992752262701608398, guid: 37d1f80bd1bc43049986a9b867e14de1,
+    type: 3}
   scoreValue: 10
